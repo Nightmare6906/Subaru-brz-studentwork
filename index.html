@@ -121,12 +121,14 @@ button {
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
-    const closeBtn = document.getElementById('closeBtn');
-    const miniApp = document.getElementById('miniApp');
+        const tg = window.Telegram.WebApp;
 
-    closeBtn.addEventListener('click', () => {
-        miniApp.style.display = 'none'; // приховати мініапку
-    });
-</script>
+        // Наприклад, закрити WebApp
+        document.getElementById('sendDataBtn').addEventListener('click', () => {
+            tg.sendData("Hello from WebApp!"); // Відправляє дані боту
+        });
+
+        tg.expand(); // Робить WebApp більшим по висоті
+    </script>
 </body>
 </html>
