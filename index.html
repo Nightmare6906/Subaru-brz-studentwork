@@ -23,7 +23,7 @@
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мій WebApp</title>
-    <style>
+    <style> 
    @font-face {
     font-family: 'MicraC';
     src: url('fonts/MicraC-Bold.woff2') format('woff2'),
@@ -63,20 +63,25 @@ button {
   body {
     margin: 0;  
     height: 100vh;
-    background: radial-gradient(circle, #0f03b5,#00bfff,  #8503b5, #b503a6);
+    background: radial-gradient(ellipse, #d68b00,#bd0101,#f1ed01  );
     background-size: 300% 300%;
-    animation: gradientBG 90s ease infinite;
+    animation: gradientBG 50s ease infinite;
+    
   }
 
   @keyframes gradientBG {
     0% {background-position:0% 50%;}
     50% {background-position:100% 50%;}
     100% {background-position:0% 50%;}
+    0% { background-rotation:0% 50%; }
+
+    
   }
   
 </style>
 
 <body>
+    
     <div class="container">
         <h1>Привіт, Telegram!</h1>
         <h2>Саша Лошапра тупа</h2>
@@ -128,7 +133,7 @@ button {
             tg.sendData("Hello from WebApp!"); // Відправляє дані боту
         });
 
-        tg.expand(); // Робить WebApp більшим по висоті
+        tg.expand(); // Робить WebApp більши
     </script>
 </body>
 </html>
