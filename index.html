@@ -2,11 +2,18 @@
 <html lang="uk">
     
 <style>
-  body {
-    max-width: 420px;
-    margin: 0 auto;
-    background: #fff;
-  }
+.app-frame {
+    width: 390px;              /* ширина як iPhone 14 */
+    height: 700px;             /* висота вікна (можеш змінити) */
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4); /* ефект "екрану" */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
   @media (min-width: 500px) {
     body {
@@ -37,6 +44,7 @@
     height: 100vh;           /* зайняти всю висоту екрана */
     text-align: center;      /* вирівняти текст */
 }
+
 body {
     font-family: 'MicraC';
     margin: 0;
