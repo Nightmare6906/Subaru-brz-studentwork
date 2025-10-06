@@ -109,24 +109,24 @@ button {
         h1 {
             color: rgb(255, 255, 255); /* колір тексту */
             margin-bottom: 1px; /* відступ під h1 */
+            font-size: 24px; /* фіксований розмір тексту */
         }
         h2 {
             color: rgb(255, 255, 255); /* колір тексту */
              margin-top: 0px; /* відступ над h2 */
+             font-size: 20px; /* фіксований розмір тексту */
         }
 
         </style>
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
-        const tg = window.Telegram.WebApp;
+    const closeBtn = document.getElementById('closeBtn');
+    const miniApp = document.getElementById('miniApp');
 
-        // Наприклад, закрити WebApp
-        document.getElementById('sendDataBtn').addEventListener('click', () => {
-            tg.sendData("Hello from WebApp!"); // Відправляє дані боту
-        });
-
-        tg.expand(); // Робить WebApp більшим по висоті
-    </script>
+    closeBtn.addEventListener('click', () => {
+        miniApp.style.display = 'none'; // приховати мініапку
+    });
+</script>
 </body>
 </html>
