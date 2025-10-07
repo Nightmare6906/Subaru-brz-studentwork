@@ -1,0 +1,93 @@
+
+   @font-face {
+    font-family: 'MicraC';
+    src: url('fonts/MicraC-Bold.woff2') format('woff2'),
+         url('fonts/MicraC-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.container {
+    display: flex;
+    flex-direction: column; /* елементи зверху вниз */
+    
+    align-items: center;     /* горизонтальне центрування */
+    height: 100vh;           /* зайняти всю висоту екрана */
+    text-align: center;      /* вирівняти текст */
+}
+
+body {
+    font-family: 'MicraC';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+    
+@keyframes gradientBG {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+    0% { background-rotation:0% 50%; }
+
+    
+  }
+  .my-button {
+        background-color: #4003a1; /* зелений фон */
+        color: white;               /* колір тексту */
+        padding: 15px 20px;
+        border: none;
+        border-radius: 20px;        /* скруглення країв */
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;
+        }
+
+        /* Додатково можна стилізувати тільки цю кнопку через id */
+        #sendDataBtn {
+        font-weight: bold;          /* наприклад, жирний текст */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* тінь */
+        }
+
+        /* Hover ефект */
+        .my-button:hover {
+        background-color: #45a049; /* темніший зелений при наведенні */
+        }
+        
+        h1 {
+            color: rgb(255, 255, 255); /* колір тексту */
+            margin-bottom: 1px; /* відступ під h1 */
+            font-size: 24px; /* фіксований розмір тексту */
+        }
+        h2 {
+            color: rgb(255, 255, 255); /* колір тексту */
+             margin-top: 0px; /* відступ над h2 */
+             font-size: 20px; /* фіксований розмір тексту */
+        }
+        .app-frame {
+    width: 390px;              /* ширина як iPhone 14 */
+    height: 1000px;             /* висота вікна (можеш змінити) */
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4); /* ефект "екрану" */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ body {
+    margin: 0;  
+    height: 100vh;
+    background: radial-gradient(ellipse, #d68b00,#bd0101,#f1ed01  );
+    background-size: 300% 300%;
+    animation: gradientBG 50s ease infinite;
+    
+  }
